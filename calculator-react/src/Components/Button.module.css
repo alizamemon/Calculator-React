@@ -1,0 +1,37 @@
+.buttonsContainer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.btn {
+    width: 35px;
+    height: 35px;
+    margin: 5px;
+    background-color: #c072b3;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+    background-color: #b409c4;
+    transform: scale(1.1);
+}
+
+.btn:active {
+    transform: scale(1.05);
+    box-shadow: 0 2px #666;
+}
+
+.buttonsContainer button:nth-child(2n) {
+    background-color: #5f5856;
+}
+
+.buttonsContainer button:nth-child(2n):hover {
+    background-color: #e64a19;
+}
